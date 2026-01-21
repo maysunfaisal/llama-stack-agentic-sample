@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: llama-stack-agentic
-  title: Llama Stack Agentic AI Workflow
+  name: llama-stack-agentic-5
+  title: Llama Stack Agentic AI Workflow 5
   description: |
     Deploy a sophisticated AI Agentic Workflow application that provides an intelligent 
     chat interface with dynamic, stateful workflow orchestration using LangGraph and 
@@ -341,7 +341,7 @@ spec:
           namespace: ${{ parameters.namespace }}
           repoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}-gitops
           srcRepoURL: https://${{ parameters.githubServer if parameters.hostType === 'GitHub' else parameters.gitlabServer }}/${{ parameters.repoOwner }}/${{ parameters.repoName }}
-          appContainer: quay.io/redhat-ai-dev/agentic-sample:latest
+          appContainer: quay.io/redhat-ai-dev/agentic-sample:dev
           appPort: 8501
           inferenceModel: ${{ parameters.inferenceModel }}
           guardrailModel: ${{ parameters.guardrailModel }}
@@ -433,8 +433,8 @@ spec:
           webhookSecretKey: webhook.secret
           defaultBranch: main
           # Application container image
-          appContainer: quay.io/redhat-ai-dev/agentic-sample:latest
-          llamaStackContainer: quay.io/redhat-ai-dev/agentic-llama-stack:latest
+          appContainer: quay.io/redhat-ai-dev/agentic-sample:dev
+          llamaStackContainer: quay.io/redhat-ai-dev/agentic-llama-stack:dev
           appPort: 8501
           # Llama Stack configuration
           vllmUrl: ${{ parameters.vllmUrl }}
