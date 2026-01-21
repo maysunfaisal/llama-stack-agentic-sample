@@ -434,7 +434,7 @@ spec:
           defaultBranch: main
           # Application container image
           appContainer: quay.io/redhat-ai-dev/agentic-sample:dev
-          llamaStackContainer: quay.io/redhat-ai-dev/agentic-llama-stack:latest
+          llamaStackContainer: quay.io/redhat-ai-dev/agentic-llama-stack:dev
           appPort: 8501
           # Llama Stack configuration
           vllmUrl: ${{ parameters.vllmUrl }}
