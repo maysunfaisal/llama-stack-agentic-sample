@@ -2,7 +2,7 @@ name: CI/CD App, Llama Stack Image Build and Push
 
 on:
   push:
-    branches: [ main ]
+    branches: [ fix-workflow-1-1 ]
   release:
     types: [ published ]
 
