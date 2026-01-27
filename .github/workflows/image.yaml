@@ -8,7 +8,7 @@ on:
 
 env:
   IMAGE_REGISTRY: quay.io
-  REGISTRY_ORG: redhat-ai-dev
+  REGISTRY_ORG: maysunfaisal
 
 jobs:
   build-and-push:
