@@ -2,8 +2,8 @@ apiVersion: scaffolder.backstage.io/v1beta3
 # https://backstage.io/docs/features/software-catalog/descriptor-format#kind-template
 kind: Template
 metadata:
-  name: llama-stack-agentic
-  title: Llama Stack Agentic AI Workflow
+  name: llama-stack-agentic-3
+  title: Llama Stack Agentic AI Workflow 3
   description: |
     Deploy a sophisticated AI Agentic Workflow application that provides an intelligent 
     chat interface with dynamic, stateful workflow orchestration using LangGraph and 
